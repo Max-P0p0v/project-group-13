@@ -1,0 +1,47 @@
+/* ===========YOUR ORDER========= */
+.order-titel {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+}
+
+.form-info {
+  width: 335px;
+  height: 47px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(252, 249, 249, 0.5);
+  background-color: transparent;
+}
+
+.form-comments {
+  width: 335px;
+  height: 196px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(252, 249, 249, 0.5);
+  background-color: transparent;
+}
+
+.btn-order {
+  width: 145px;
+  height: 49px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 36px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+}
