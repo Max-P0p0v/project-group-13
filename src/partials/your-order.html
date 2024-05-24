@@ -1,38 +1,69 @@
 <!-- your order -->
-<section class="container">
-  <h2 class="order-titel">
-    <span class="accent-color">Your order</span> is our priority: Personalized
-    approach and quality of service
-  </h2>
-  <form class="order-form">
-    <label class="order-label">
-      <input
-        type="text"
-        name="user-name"
-        placeholder="Enter your full name"
-        class="form-info"
+<section class="container order">
+  <div class="backgroung-img"></div>
+  <div class="order-wraper">
+    <div class="form-wraper">
+      <h2 class="order-titel">
+        <span class="accent-color">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="order-form">
+        <label class="order-label">
+          <input
+            type="text"
+            name="user-name"
+            placeholder="Enter your full name"
+            pattern="[A-Za-z0-9]{2,}"
+            required
+            class="form-info"
+          />
+        </label>
+        <label class="order-label">
+          <input
+            type="email"
+            name="user-email"
+            placeholder="Enter your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+            class="form-info"
+          />
+        </label>
+        <label class="order-label">
+          <textarea
+            name="comments"
+            placeholder="Comments"
+            required
+            class="form-comments"
+          ></textarea>
+        </label>
+        <button type="submit" class="btn-order">
+          Send
+          <svg class="form-icon" width="24" height="16">
+            <use href="../img/icons/icons-sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <picture>
+      <source
+        srcset="../img/your-order/order-vyshyvanka-d1440 12.21.16.jpg, ../img/your-order/order-vyshyvanka-d1440@2x 12.21.16.jpg"
+        media="(min-width: 1440px)"
       />
-    </label>
-    <label class="order-label">
-      <input
-        type="email"
-        name="user-email"
-        placeholder="Enter your email"
-        class="form-info"
+      <source
+        srcset="../img/your-order/order-vyshyvanka-d1280 12.21.16.jpg, ../img/your-order/order-vyshyvanka-d1280@2x 12.21.16.jpg"
+        media="(min-width: 1440px)"
       />
-    </label>
-    <label class="order-label">
-      <textarea
-        name="comments"
-        placeholder="Comments"
-        class="form-comments"
-      ></textarea>
-    </label>
-    <button type="submit" class="btn-order">Send</button>
-  </form>
-  <img
-    class=""
-    src="../img/your-order/order-vyshyvanka-d1280 12.21.16.jpg"
-    alt="white vyshyvanka"
-  />
+      <source
+        srcset="../img/your-order/order-vyshyvanka-tablet 12.21.16.jpg, ../img/your-order/order-vyshyvanka-tablet@2x 12.21.16.jpg"
+        media="(min-width: 768px)"
+      />
+      <img
+        class="order-picture"
+        src="../img/your-order/order-vyshyvanka-tablet@2x 12.21.16.jpg"
+        alt="white vyshyvanka"
+        width="704"
+        height="521"
+      />
+    </picture>
+  </div>
 </section>
