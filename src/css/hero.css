@@ -1,8 +1,17 @@
+/* :root {
+	--black: #1c2225;
+	--yellow: #ecd979;
+	--white: #fcf9f9;
+}
+
+:root {
+  --font-family: "Manrope", sans-serif;
+  --second-family: "DM Sans", sans-serif;
+} */
 
 /* .section {
   padding: 40px 0;
 } */
-
 
 /* @media screen and (min-width: 768px) {
   .container {
@@ -36,40 +45,80 @@
   }
 } */
 
-
-
-
 /* ============ MOBILE ============ */
 
 .hero-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
+  max-width: 335px;
 }
 
+.hero-title-container {
+ display: flex;
+ flex-direction: column;
 
-.hero-title{
-font-family: var(--font-family);
-font-weight: 400;
-font-size: 44px;
-line-height: 1.09;
-letter-spacing: -0.03em;
-color: #FCF9F9;
+  
 }
 
-.hero-text-ukrainian{
-color: #ECD979;
+.hero-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.09;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  max-width: 335px;
+  margin-bottom: 20px;
 }
 
+.hero-text-ukrainian {
+  color: #ecd979;
+}
 
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 36px;
+  width: 154px;
+  height: 49px;
+  margin-bottom: 40px;
+}
 
+.hero-link-order {
+  font-family: var(--fonamily);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.social-list-icon {
+  fill: #ecd979;
+}
+
+.hero-star-text {
+  width: 115px;
+  height: 111px;
+}
+
+.hero-star-text {
+  display: none;
+}
+
+.hero-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: rgba(252, 249, 249, 0.4);
+  text-align: left;
+}
 
 /* ============ TABLE ============= */
-
-
-
-
 
 /* ============ DESKTOP ============ */
