@@ -51,6 +51,10 @@
     margin-top: 50px;
     margin-bottom: 100px;
   }
+  .our-collection-title {
+    font-size: 44px;
+    line-height: 1.45455;
+  }
   .our-collection-list {
     flex-direction: row;
     flex-wrap: wrap;
