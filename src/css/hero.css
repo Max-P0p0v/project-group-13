@@ -67,6 +67,7 @@
   letter-spacing: -0.03em;
   color: #fcf9f9;
   max-width: 335px;
+  max-height: 192px;
   margin-bottom: 20px;
 }
 
@@ -107,16 +108,15 @@
   display: none;
 }
 
-.hero-text {
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: -0.04em;
-  text-align: left;
-}
 
 /* ============ TABLE ============= */
 
 @media screen and (min-width: 768px) {
+  .hero-section{
+    display: flex;
+  }
+  
+  
   .hero-container {
     max-width: 549px;
   }
@@ -137,9 +137,22 @@
   }
 
   .hero-star-text {
-    width: 115px;
-    height: 111px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px;
+    margin-left: 40px;
+  }
+
+  .hero-img-star {
+    margin-bottom: 16px;
+  }
+
+  .hero-star-text {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    text-align: center;
   }
 }
 
