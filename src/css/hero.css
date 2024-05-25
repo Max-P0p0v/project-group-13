@@ -107,6 +107,8 @@
 
 .hero-star-text {
   display: none;
+    opacity: 1;
+  visibility: visible;
 }
 
 .hero-text {
