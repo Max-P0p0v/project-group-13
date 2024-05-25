@@ -1,50 +1,3 @@
-/* :root {
-	--black: #1c2225;
-	--yellow: #ecd979;
-	--white: #fcf9f9;
-}
-
-:root {
-  --font-family: "Manrope", sans-serif;
-  --second-family: "DM Sans", sans-serif;
-} */
-
-/* .section {
-  padding: 40px 0;
-} */
-
-/* @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-    .section {
-    padding: 50px 0;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-    .section {
-    padding: 75px 0;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-} */
-
 /* ============ MOBILE ============ */
 
 .hero-container {
@@ -66,8 +19,8 @@
   line-height: 1.09;
   letter-spacing: -0.03em;
   color: #fcf9f9;
-  max-width: 335px;
-  max-height: 192px;
+  width: 335px;
+  height: 192px;
   margin-bottom: 20px;
 }
 
@@ -108,23 +61,21 @@
   display: none;
 }
 
-
 /* ============ TABLE ============= */
 
 @media screen and (min-width: 768px) {
-  .hero-section{
+  .hero-section {
     display: flex;
   }
-  
-  
+
   .hero-container {
     max-width: 549px;
   }
 
   .hero-title {
-    max-width: 549px;
+    width: 549px;
     font-size: 54px;
-    line-height: 119%;
+    line-height: 1.19;
     margin-bottom: 40px;
   }
 
@@ -158,20 +109,46 @@
 
 /* ============ DESKTOP ============ */
 
-/* @media screen and (min-width: 1280px) {
-  .container {
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    display: flex;
     max-width: 1280px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
-} */
+
+  .hero-title-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .hero-title {
+    width: 518px;
+    margin-top: 94px;
+    margin-left: 40px;
+  }
+
+  .hero-btn {
+    margin-left: 181px;
+  }
+
+  .hero-star-container {
+    margin-top: 14px;
+    margin-left: 115px;
+  }
+}
 
 /* ============ DESKTOP-1440p ============ */
 
-/* @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1280px;
-    padding-left: 50px;
-    padding-right: 50px;
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    max-width: 1440px;
   }
-} */
+
+  .hero-title {
+    width: 632px;
+    height: 222px;
+    font-size: 64px;
+    line-height: 1.16;
+    margin-top: 66px;
+    margin-bottom: 40px;
+  }
+}
