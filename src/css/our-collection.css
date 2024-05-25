@@ -1,0 +1,93 @@
+.our-collection-section {
+  margin-top: 18px;
+  margin-bottom: 80px;
+  background-image: url(/img/yellow-ornament.png);
+  background-repeat: no-repeat;
+  background-size: 199px 177px;
+  background-position: calc(50% - 215px) 298px;
+}
+.our-collection-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.our-collection-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+.our-collection-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+.our-collection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.our-collection-picture {
+  border-radius: 4px;
+}
+/* ====================Tablet===================== */
+@media screen and (min-width: 768px) {
+  .our-collection-section {
+    background-size: 338px 300px;
+    background-position: calc(50% - 439px) 201px;
+  }
+  .our-collection-section {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .our-collection-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+  .our-collection-list-item {
+    width: calc((100% - 20px) / 2);
+  }
+  .our-collection-name {
+    font-size: 18px;
+  }
+  .our-collection-price {
+    font-size: 18px;
+  }
+}
+/* ====================DT 1280px==================== */
+@media screen and (min-width: 1280px) {
+  .our-collection-section {
+    background-position: calc(50% - 640px) 201px;
+  }
+  .our-collection-section {
+    margin-top: 70px;
+    margin-bottom: 141px;
+  }
+  .our-collection-list {
+    row-gap: 40px;
+  }
+  .our-collection-list-item {
+    width: calc((100% - 40px) / 3);
+  }
+}
+/* ====================DT 1440px==================== */
+@media screen and (min-width: 1440px) {
+  .our-collection-section {
+    background-position: calc(50% - 719px) 201px;
+  }
+  .our-collection-section {
+    margin-bottom: 150px;
+  }
+}
