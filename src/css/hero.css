@@ -55,12 +55,9 @@
 }
 
 .hero-title-container {
- display: flex;
- flex-direction: column;
-
-
+  display: flex;
+  flex-direction: column;
 }
-
 
 .hero-title {
   font-family: var(--font-family);
@@ -85,7 +82,7 @@
   padding: 14px 36px;
   width: 154px;
   height: 49px;
-  margin-left: 90px;
+  margin-left: 70px;
   margin-bottom: 40px;
 }
 
@@ -107,12 +104,8 @@
 .hero-star-text {
   width: 115px;
   height: 111px;
-}
-
-/* .hero-star-text {
   display: none;
-} */
-
+}
 
 .hero-text {
   font-weight: 400;
@@ -123,4 +116,49 @@
 
 /* ============ TABLE ============= */
 
+@media screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 549px;
+  }
+
+  .hero-title {
+    max-width: 549px;
+    font-size: 54px;
+    line-height: 119%;
+    margin-bottom: 40px;
+  }
+
+  .hero-btn {
+    padding: 14px 39px;
+    width: 168px;
+    height: 50px;
+    margin-left: 141px;
+    margin-bottom: 46px;
+  }
+
+  .hero-star-text {
+    width: 115px;
+    height: 111px;
+    display: block;
+  }
+}
+
 /* ============ DESKTOP ============ */
+
+/* @media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+} */
+
+/* ============ DESKTOP-1440p ============ */
+
+/* @media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+} */
