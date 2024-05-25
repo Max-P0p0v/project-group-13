@@ -102,7 +102,7 @@
   margin-left: 10px;
 }
 
-.hero-star-text {
+.hero-star-container {
   width: 115px;
   height: 111px;
   display: none;
@@ -136,15 +136,15 @@
     margin-bottom: 46px;
   }
 
-  .hero-star-text {
+  .hero-star-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin-top: 16px;
     margin-left: 40px;
   }
 
-  .hero-img-star {
+  .hero-star-img {
     margin-bottom: 16px;
   }
 
