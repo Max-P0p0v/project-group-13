@@ -1,0 +1,103 @@
+section {
+    margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    section {
+        margin-bottom: 150px;
+    }
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.38;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    font-size: 14px;
+    letter-spacing: -0.04em;
+}  
+
+.about-text-item1 {
+    padding-bottom: 20px;
+}
+
+.about-us-img {
+    border-radius: 4px;
+    height: 499px;
+    margin-top: 50px;
+}
+
+.about-us-container {
+    height: 1019px;
+    background-image: url(../img/gray-ornament.png);
+    background-size: 459px 408px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 164px) calc(50% + 259px);
+}
+
+.about-us-section {
+    margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .section-title {
+        font-size: 44px;
+        line-height: 1.45;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+
+    .about-us-img {
+        height: 545px;
+        margin-top: 40px;
+    }
+
+    .about-us-container {
+        height: 1018px;
+        background-size: 545px 484px;
+        background-position: calc(50% + 287px) calc(50% + 173px);
+    }
+
+    .about-us-section {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about-us-container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        height: 625px;
+        padding-bottom: 80px;
+        background-position: calc(50% + 525px) calc(50% + 70px);
+    }
+
+    .about-us-img {
+        max-width: 594px;
+        margin-top: 0;
+    }
+
+    .about-us-section {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-us-container {
+        background-position: right calc(50% + 70px);
+    }
+}
+
