@@ -39,6 +39,41 @@ body {
   }
 }
 
+section {
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section {
+    margin-bottom: 150px;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.38;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 44px;
+    line-height: 1.45;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
 p {
   color: rgba(252, 249, 249, 0.4);
 }
