@@ -15,8 +15,7 @@
   border-radius: 4px;
   padding: 0px 18px 18px 18px;
   max-width: 335px;
-  height: 243px;
-
+  min-height: 243px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -39,7 +38,6 @@
 
 .testimonials-info {
   max-width: 291px;
-  height: 171px;
   padding-top: 54px;
 }
 
@@ -53,14 +51,59 @@
 .testimonials-review {
   text-align: center;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.38;
+  margin-bottom: 18px;
 }
 
 @media screen and (min-width: 768px) {
+  .testimonials-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .testimonials-item {
+    max-width: 336px;
+    height: 286px;
+  }
+
+  .testimonials-item:nth-child(2) {
+    display: flex;
+  }
+
+  .testimonials-info {
+    max-width: 300px;
+  }
+
+  .testimonials-review {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .testimonials-list {
+    gap: 26px;
+  }
+  .testimonials-item:nth-child(3) {
+    display: flex;
+  }
+
+  .testimonials-item {
+    max-width: 376px;
+    height: 285px;
+  }
+
+  .testimonials-info {
+    max-width: 340px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .testimonials-item {
+    max-width: 396px;
+    height: 264px;
+  }
+
+  .testimonials-info {
+    max-width: 360px;
+  }
 }
