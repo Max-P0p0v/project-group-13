@@ -1,6 +1,4 @@
 .our-collection-section {
-  margin-top: 18px;
-  margin-bottom: 80px;
   background-image: url(/img/yellow-ornament.png);
   background-repeat: no-repeat;
   background-size: 199px 177px;
@@ -24,7 +22,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-top: 18px;
   margin-bottom: 8px;
 }
 .our-collection-price {
@@ -40,16 +37,19 @@
 }
 .our-collection-picture {
   border-radius: 4px;
+  margin-bottom: 18px;
+}
+/* ===============Mobile 320px-375px================ */
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .our-collection-section {
+    background-position: -72% 10.3%;
+  }
 }
 /* ====================Tablet===================== */
 @media screen and (min-width: 768px) {
   .our-collection-section {
     background-size: 338px 300px;
     background-position: calc(50% - 439px) 201px;
-  }
-  .our-collection-section {
-    margin-top: 50px;
-    margin-bottom: 100px;
   }
   .our-collection-title {
     font-size: 44px;
@@ -58,7 +58,6 @@
   .our-collection-list {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 20px;
   }
   .our-collection-list-item {
     width: calc((100% - 20px) / 2);
@@ -75,12 +74,9 @@
   .our-collection-section {
     background-position: calc(50% - 640px) 201px;
   }
-  .our-collection-section {
-    margin-top: 70px;
-    margin-bottom: 141px;
-  }
   .our-collection-list {
     row-gap: 40px;
+    column-gap: 20px;
   }
   .our-collection-list-item {
     width: calc((100% - 40px) / 3);
@@ -90,8 +86,5 @@
 @media screen and (min-width: 1440px) {
   .our-collection-section {
     background-position: calc(50% - 719px) 201px;
-  }
-  .our-collection-section {
-    margin-bottom: 150px;
   }
 }
