@@ -1,15 +1,14 @@
 /* ============ MOBILE ============ */
 
-.hero-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 335px;
+.hero {
+  padding-top: 84px;
 }
 
-.hero-title-container {
+.hero-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-title {
@@ -18,13 +17,7 @@
   line-height: 1.09;
   letter-spacing: -0.03em;
   color: #fcf9f9;
-  width: 335px;
-  height: 192px;
   margin-bottom: 20px;
-}
-
-.hero-text-ukrainian {
-  color: #ecd979;
 }
 
 .hero-btn {
@@ -37,15 +30,13 @@
   height: 49px;
   margin-left: 70px;
   margin-bottom: 40px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-  .hero-btn:hover,
-  .hero-btn:focus {
-    border: 1px solid #ecd979;
-  }
-
-
+.hero-btn:hover,
+.hero-btn:focus {
+  border: 1px solid #ecd979;
+}
 
 .hero-link-order {
   font-weight: 600;
@@ -62,8 +53,6 @@
   margin-left: 10px;
 }
 
-
-
 .hero-star-container {
   display: none;
 }
@@ -71,16 +60,20 @@
 /* ============ TABLE ============= */
 
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 100px;
+  }
+
   .hero-section {
     display: flex;
+    gap: 40px;
   }
 
   .hero-container {
-    width: 549px;
+    align-items: flex-start;
   }
 
   .hero-title {
-    width: 549px;
     font-size: 54px;
     line-height: 1.19;
     margin-bottom: 40px;
@@ -99,7 +92,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 16px;
-    margin-left: 40px;
   }
 
   .hero-star-img {
@@ -119,20 +111,20 @@
 /* ============ DESKTOP ============ */
 
 @media screen and (min-width: 1280px) {
+  .hero-section {
+    gap: 115px;
+  }
+
   .hero-container {
     display: flex;
     width: 1280px;
-  }
-
-  .hero-title-container {
-    display: flex;
     flex-direction: row-reverse;
+    gap: 40px;
   }
 
   .hero-title {
     width: 518px;
     margin-top: 94px;
-    margin-left: 40px;
   }
 
   .hero-btn {
@@ -141,7 +133,6 @@
 
   .hero-star-container {
     margin-top: 14px;
-    margin-left: 115px;
   }
 }
 
@@ -149,19 +140,17 @@
 
 @media screen and (min-width: 1440px) {
   .hero-container {
-    width: 1440px;
+    justify-content: space-between;
   }
 
   .hero-title {
     width: 632px;
-    height: 222px;
     font-size: 64px;
     line-height: 1.16;
     margin-top: 66px;
   }
 
-    .hero-star-container {
+  .hero-star-container {
     margin-top: 66px;
-    margin-left: 61px;
   }
 }
