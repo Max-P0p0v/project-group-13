@@ -2,11 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 20px;
 }
+
 .header-logo {
   fill: #ecd979;
+  display: block;
+  width: 44px;
+  height: 39px;
 }
 
 .header-nav {
@@ -53,9 +58,8 @@
   fill: #fcf9f9;
 }
 .header-burger-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 0;
+  padding: 0;
   width: 36px;
   height: 24px;
   background-color: transparent;
@@ -69,6 +73,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
   .header-social-burger-box {
     gap: 20px;
   }
@@ -150,5 +159,11 @@
     line-height: 1.43;
     text-transform: uppercase;
     color: #fcf9f9;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    margin-top: 18px;
   }
 }
