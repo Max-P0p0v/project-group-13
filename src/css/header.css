@@ -73,11 +73,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header-container {
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-
   .header-social-burger-box {
     gap: 20px;
   }
@@ -94,6 +89,11 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .header-container {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
   .header-logo-nav-box {
     display: flex;
     gap: 60px;
