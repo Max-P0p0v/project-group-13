@@ -168,6 +168,7 @@
   }
 
   .order {
+    padding-bottom: 0px;
     background-position: calc(50% - 624px) bottom;
   }
 
@@ -193,9 +194,6 @@
 
 /* =========================DT 1440px====================================== */
 @media screen and (min-width: 1440px) {
-  .order {
-    background-position: bottom left -220px;
-  }
   .backgroung-img {
     width: 1440px;
     height: 776px;
@@ -204,7 +202,7 @@
 
   @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .backgroung-img {
-      background-image: url(/img/your-order/green-girl-d1440@2x\ 12.21.16.jpg);
+      background-image: url(/img/your-order/green-girl-d1440@2x.jpg);
     }
   }
 
