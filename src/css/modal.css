@@ -1,0 +1,97 @@
+/* ======mobile-menu-mob==== */
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: 250ms cubic-bezier (0.4, 0.2, 1);
+}
+.mobile-menu {
+  position: absolute;
+  background-color: #ecd979;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  z-index: 999;
+  width: 274px;
+  height: 100%;
+  background-image: url(/src/img/black-ornament.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 250ms ease-in-out;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+@media screen and (max-width: 1279px) {
+  .is-open .mobile-menu {
+    transform: translateX(0%);
+  }
+}
+.but {
+  position: fixed;
+  top: 20px;
+  right: 12px;
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+}
+.but-one {
+  stroke: #1c2225;
+  width: 30px;
+  height: 30px;
+}
+.tel {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 117%;
+  color: #1c2225;
+  border-radius: 15px;
+  border: 1px solid rgba(28, 34, 37, 0.1);
+  padding: 12px 20px;
+  width: fit-content;
+}
+.mob-h {
+  padding: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.mob-m-l {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.mob-m-l-link {
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
+  color: #1c2225;
+}
+
+.orn {
+  width: 100%;
+  height: 252px;
+}
+/* =====mobile-menu-tab==== */
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    width: 380px;
+  }
+}
