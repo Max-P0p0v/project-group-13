@@ -1,7 +1,7 @@
 <!-- your order -->
-<section class="container order">
-  <div class="backgroung-img"></div>
-  <div class="order-wraper">
+<section class="order">
+  <div class="backgroung-img container"></div>
+  <div class="order-wraper container">
     <div class="form-wraper">
       <h2 class="order-titel">
         <span class="accent-color">Your order</span> is our priority:
@@ -36,7 +36,7 @@
             class="form-comments"
           ></textarea>
         </label>
-        <button type="submit" class="btn-order">
+        <button type="submit" class="btn-send">
           Send
           <svg class="form-icon" width="24" height="16">
             <use href="/img/icons/icons-sprite.svg#icon-arrow"></use>
@@ -44,25 +44,26 @@
         </button>
       </form>
     </div>
-    <picture class="">
+    <picture>
       <source
-        srcset="/img/your-order/order-vyshyvanka-d1440 12.21.16.jpg, /img/your-order/order-vyshyvanka-d1440@2x 12.21.16.jpg"
+        srcset="
+          /img/your-order/order-vyshyvanka-d1440.jpg    1x,
+          /img/your-order/order-vyshyvanka-d1440@2x.jpg 2x
+        "
         media="(min-width: 1440px)"
       />
       <source
-        srcset="/img/your-order/order-vyshyvanka-d1280 12.21.16.jpg, /img/your-order/order-vyshyvanka-d1280@2x 12.21.16.jpg"
-        media="(min-width: 1440px)"
+        srcset="/img/your-order/order-vyshyvanka-d1280 12.21.16.jpg 1x, /img/your-order/order-vyshyvanka-d1280@2x 12.21.16.jpg 2x"
+        media="(min-width: 1280px)"
       />
       <source
-        srcset="/img/your-order/order-vyshyvanka-tablet 12.21.16.jpg, /img/your-order/order-vyshyvanka-tablet@2x 12.21.16.jpg"
+        srcset="/img/your-order/order-vyshyvanka-tablet 12.21.16.jpg 1x, /img/your-order/order-vyshyvanka-tablet@2x 12.21.16.jpg 2x"
         media="(min-width: 768px)"
       />
       <img
         class="order-picture"
-        src="/img/your-order/order-vyshyvanka-tablet@2x 12.21.16.jpg"
+        src="/img/your-order/order-vyshyvanka-tablet.jpg"
         alt="white vyshyvanka"
-        width="704"
-        height="521"
       />
     </picture>
   </div>
