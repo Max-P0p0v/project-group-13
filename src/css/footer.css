@@ -86,6 +86,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .container {
+    margin-left: 100px;
+  }
   .footer {
     background-position: center right -100px;
   }
