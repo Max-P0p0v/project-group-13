@@ -1,0 +1,92 @@
+.footer {
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
+  padding-top: 40px;
+  background-image: url(/img/yellow-ornament.png);
+  background-repeat: no-repeat;
+  background-size: 452px 401px;
+  background-position: center bottom -201px;
+  position: relative;
+}
+
+.footer-page {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 40px;
+  margin-bottom: 40px;
+  width: 280px;
+  height: 61px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fcf9f9;
+}
+
+.footer-description {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.23;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  margin-bottom: 280px;
+}
+
+.footer-picture {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background-position: center right -278px;
+  }
+  .footer-picture {
+    height: 0;
+  }
+  .footer-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 25px;
+    margin-bottom: 80px;
+    width: 478px;
+    height: 18px;
+  }
+  .footer-description {
+    font-size: 54px;
+    line-height: 1.19;
+    margin-bottom: 40px;
+    width: 521px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-left: 50px;
+  }
+  .footer {
+    background-position: center right -258px;
+    background-size: 595px 528px;
+  }
+  .footer-list {
+    margin-bottom: 117px;
+  }
+  .footer-description {
+    font-size: 64px;
+    line-height: 1.16;
+    width: 754px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    background-position: center right -100px;
+  }
+}
