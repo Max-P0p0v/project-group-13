@@ -1,3 +1,18 @@
+/* ===============Mobile 320px-375px================ */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .flip {
+    display: none;
+  }
+
+  .our-collection-picture {
+    margin-bottom: 18px;
+  }
+
+  .our-collection-section {
+    background-position: -72% 10.3%;
+  }
+}
+
 .our-collection-section {
   background-image: url(/img/yellow-ornament.png);
   background-repeat: no-repeat;
@@ -39,69 +54,76 @@
   border-radius: 4px;
   /* margin-bottom: 18px; */
 }
-
-.flip-card {
-  background-color: transparent;
-  width: 335px;
-  height: 430px;
-  perspective: 1000px;
-  margin-bottom: 18px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-back {
-  background-color: dodgerblue;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transform: rotateY(180deg);
-}
-.try-again {
-  color: yellow;
-  font-size: 66px;
-  text-transform: uppercase;
-}
-
-.you-win {
-  color: greenyellow;
-  font-size: 66px;
-  text-transform: uppercase;
-}
-/* ===============Mobile 320px-375px================ */
-@media screen and (min-width: 320px) and (max-width: 375px) {
-  .our-collection-section {
-    background-position: -72% 10.3%;
+@media screen and (min-width: 375px) {
+  .flip {
+    display: block;
   }
+  .flip-none {
+    display: none;
+  }
+
   .flip-card {
-    max-width: 335px;
+    background-color: transparent;
+    width: 335px;
+    height: 430px;
+    perspective: 1000px;
+    margin-bottom: 18px;
   }
+
+  .august-flip-card {
+    background-color: transparent;
+    width: 335px;
+    height: 400px;
+    perspective: 1000px;
+    margin-bottom: 18px;
+  }
+
   .flip-card-inner {
+    position: relative;
+    width: 100%;
     height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner,
+  .august-flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+    background-color: dodgerblue;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotateY(180deg);
+  }
+  .try-again {
+    color: yellow;
+    font-size: 66px;
+    text-transform: uppercase;
+  }
+
+  .you-win {
+    text-align: center;
+    color: greenyellow;
+    font-size: 66px;
+    text-transform: uppercase;
   }
 }
+
 /* ====================Tablet===================== */
 @media screen and (min-width: 768px) {
   .our-collection-section {
@@ -128,6 +150,10 @@
   .flip-card {
     width: 342px;
   }
+  .august-flip-card {
+    width: 342px;
+    height: 430px;
+  }
   .flip-card-inner {
     height: 100%;
   }
@@ -147,6 +173,9 @@
   .flip-card {
     width: 380px;
   }
+  .august-flip-card {
+    width: 380px;
+  }
 }
 /* ====================DT 1440px==================== */
 @media screen and (min-width: 1440px) {
@@ -154,6 +183,9 @@
     background-position: calc(50% - 719px) 201px;
   }
   .flip-card {
+    width: 400px;
+  }
+  .august-flip-card {
     width: 400px;
   }
 }

@@ -96,6 +96,26 @@
   display: none;
 }
 
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .form-wraper {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .order-wraper {
+    padding: 0;
+    margin: 0;
+  }
+  .backgroung-img {
+    width: 100%;
+    height: 500px;
+    background-image: url(/img/your-order/green-girl-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 80px;
+  }
+}
+
 /* ======================TABLET=================== */
 
 @media screen and (min-width: 768px) {
