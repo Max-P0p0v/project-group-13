@@ -1,0 +1,147 @@
+/* ======mobile-menu-mob==== */
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier (0.4, 0.2, 1);
+}
+.mobile-menu {
+  position: absolute;
+  background-color: #ecd979;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  z-index: 999;
+  width: 274px;
+  height: 100%;
+  background-image: url(/src/img/black-ornament.png);
+  background-position-x: calc(50% + 6px);
+  background-position-y: calc(100% + 51px);
+  background-size: 340px 302px;
+  background-repeat: no-repeat;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 20px;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.is-open .mobile-menu {
+  transform: translateX(0%);
+}
+
+.but {
+  position: fixed;
+  top: 21px;
+  right: 20px;
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.but-one {
+  stroke: #1c2225;
+  width: 18px;
+  height: 18px;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.but:hover .but-one,
+.but:focus .but-one {
+  stroke: #ffffff;
+}
+.tel {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  color: #1c2225;
+  border-radius: 15px;
+  border: 1px solid rgba(28, 34, 37, 0.1);
+  padding: 12px 20px;
+  width: fit-content;
+}
+.tel:hover,
+.tel:focus {
+  border: 1px solid #ffffff;
+}
+.mob-h {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 186px;
+}
+.mob-m-l {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.mob-m-l-link {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: #1c2225;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-m-l-item:hover .mob-m-l-link,
+.mob-m-l-item:focus .mob-m-l-link {
+  color: #ffffff;
+}
+
+/* =====mobile-menu-tab==== */
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    width: 380px;
+    background-position-x: calc(50% + 10px);
+    background-position-y: calc(100% + 120px);
+    background-size: 545px 484px;
+    padding: 20px 32px;
+  }
+  .but {
+    top: 20px;
+    right: 32px;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+  }
+  .but-one {
+    width: 22px;
+    height: 22px;
+  }
+
+  .mob-h {
+    gap: 223px;
+  }
+
+  .tel {
+    font-weight: 400;
+    line-height: 1.43;
+    padding: 14px 28px;
+  }
+
+  .mob-m-l {
+    gap: 25px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backdrop {
+    display: none;
+  }
+}
