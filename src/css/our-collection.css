@@ -7,7 +7,7 @@
 .our-collection-title {
   font-weight: 500;
   font-size: 32px;
-  line-height: 1.375;
+  line-height: 1.38;
   letter-spacing: -0.03em;
   text-align: center;
   margin-bottom: 40px;
@@ -53,7 +53,7 @@
   }
   .our-collection-title {
     font-size: 44px;
-    line-height: 1.45455;
+    line-height: 1.45;
   }
   .our-collection-list {
     flex-direction: row;

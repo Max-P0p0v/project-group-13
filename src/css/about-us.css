@@ -1,81 +1,79 @@
-
 .about-text {
-    font-size: 14px;
-    letter-spacing: -0.04em;
-    line-height: 1.38;
-}  
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  line-height: 1.38;
+}
 
 .about-text-item1 {
-    padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .about-us-text {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .about-us-img {
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 .about-us-container {
-    padding-bottom: 62px;
+  padding-bottom: 62px;
 }
 
 .about-us-section {
-    background-image: url(/img/gray-ornament.png);
-    background-size: 459px 408px;
-    background-repeat: no-repeat;
-    background-position: calc(50% + 167px) bottom;
+  background-image: url(/img/gray-ornament.png);
+  background-size: 459px 408px;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 167px) bottom;
 }
 
 @media screen and (min-width: 768px) {
-    .about-text {
-        font-size: 16px;
-    }
+  .about-text {
+    font-size: 16px;
+  }
 
-    .about-us-text {
-        margin-bottom: 40px;
-    }
+  .about-us-text {
+    margin-bottom: 40px;
+  }
 
-    .about-us-container {
-        padding-bottom: 50px;
-    }
+  .about-us-container {
+    padding-bottom: 50px;
+  }
 
-    .about-us-section {
-        background-size: 545px 484px;
-        background-position: calc(50% + 288px) bottom;
-        margin-bottom: 50px;
-    }
+  .about-us-section {
+    background-size: 545px 484px;
+    background-position: calc(50% + 288px) bottom;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .about-us-container {
-        display: flex;
-        align-items: center;
-        gap: 50px;
-        padding-bottom: 80px;
-    }
+  .about-us-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 80px;
+  }
 
-    .about-us-img {
-        max-width: 594px;
-    }
+  .about-us-img {
+    max-width: 594px;
+  }
 
-    .about-us-text {
-        margin-bottom: 0;
-    }
+  .about-us-text {
+    margin-bottom: 0;
+  }
 
-    .about-us-section {
-        background-position: calc(50% + 528px) bottom;
-        margin-bottom: 70px;
-    }
+  .about-us-section {
+    background-position: calc(50% + 528px) bottom;
+    margin-bottom: 70px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .about-us-img {
-        max-width: 709px;
-    }
-    .about-us-section {
-        background-position: right bottom;
-    }
+  .about-us-img {
+    max-width: 709px;
+  }
+  .about-us-section {
+    background-position: right bottom;
+  }
 }
-
