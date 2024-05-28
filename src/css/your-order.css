@@ -1,7 +1,6 @@
 /* ===========YOUR ORDER========= */
 
 .backgroung-img {
-  min-width: 320px;
   max-width: 375px;
   height: 500px;
   background-image: url(/img/your-order/green-girl-mobile.jpg);
@@ -101,7 +100,7 @@
 
 @media screen and (min-width: 768px) {
   .backgroung-img {
-    width: 768px;
+    max-width: 768px;
     height: 776px;
     background-image: url(/img/your-order/green-girl-tablet.jpg);
     margin-bottom: 100px;
@@ -201,7 +200,7 @@
 /* =========================DT 1440px====================================== */
 @media screen and (min-width: 1440px) {
   .backgroung-img {
-    width: 1440px;
+    max-width: 1440px;
     height: 776px;
     background-image: url(/img/your-order/green-girl-d1440.jpg);
   }
