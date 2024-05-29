@@ -49,6 +49,7 @@
 .tel {
   font-size: 12px;
   font-weight: 400;
+  height: 38px;
   line-height: 1.17;
   color: #1c2225;
   border-radius: 15px;
@@ -65,8 +66,12 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  gap: 186px;
 }
+.mob-top {
+  display: flex;
+  flex-grow: 0.25;
+}
+
 .mob-m-l {
   display: flex;
   flex-direction: column;
@@ -107,13 +112,15 @@
     height: 22px;
   }
 
-  .mob-h {
-    gap: 223px;
+  .mob-top {
+    display: flex;
+    flex-grow: 0.18;
   }
 
   .tel {
     font-weight: 400;
     line-height: 1.43;
+    height: 48px;
     padding: 14px 28px;
   }
 
