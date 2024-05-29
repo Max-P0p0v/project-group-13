@@ -139,21 +139,21 @@
 
   .header-address {
     display: flex;
+  }
+
+  .header-address:hover .header-address-link,
+  .header-address:focus .header-address-link {
+    border-color: #ecd979;
+  }
+
+  .header-address-link {
     border: 1px solid rgba(252, 249, 249, 0.1);
     border-radius: 15px;
     padding: 14px 28px;
     min-width: 193px;
     height: 48px;
-
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  .header-address:hover,
-  .header-address:focus {
-    border-color: #ecd979;
-  }
-
-  .header-address-link {
     font-size: 14px;
     line-height: 1.43;
     text-transform: uppercase;
